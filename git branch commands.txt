@@ -1,0 +1,19 @@
+git branch anttest
+git checkout anttest
+git add .
+git commit -m "test commit"
+git push origin anttest
+git checkout master
+git merge anttest
+git push origin master
+
+
+$ git push --delete <remote_name> <branch_name>
+$ git branch -d <branch_name>
+Note that in most cases the remote name is origin.
+
+Delete Local Branch
+To delete the local branch use one of the following:
+
+$ git branch -d branch_name
+$ git branch -D branch_name
